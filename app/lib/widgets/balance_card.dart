@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class BalanceCard extends StatelessWidget {
   const BalanceCard({super.key, required this.balance, this.currency = 'XLM'});
@@ -16,7 +16,7 @@ class BalanceCard extends StatelessWidget {
           children: [
             const Text('Balance', style: TextStyle(fontSize: 12)),
             Text(
-              '\ \',
+              '$balance $currency',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
